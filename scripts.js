@@ -1,9 +1,11 @@
-setInterval(DigitalClock, 1000)
+function DigitalTime(){
 
-function DigitalClock {
-  const currentDate = new Date();
-  const seconds = currentDate.getSeconds();
-  const minutes = currentDate.getMinutes();
-  const hours = currentDate.getHours();
+  var date = new Date()
+  var h = date.gethours();
+  var m = date.getminutes();
+  var s = date.getseconds();
 
-}
+  var time = h + ":" + m + ":" + s;
+  document.getElementbyId("Clock-time").innertext = time;
+
+DigitalTime();
