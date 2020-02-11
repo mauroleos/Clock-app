@@ -6,6 +6,6 @@ function DigitalTime(){
   var s = date.getseconds();
 
   var time = h + ":" + m + ":" + s;
-  document.getElementbyId("Clock-time").innertext = time;
+  document.getElementById("Clock-time").innerText = time;
 
-DigitalTime();
+return DigitalTime();
