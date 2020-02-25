@@ -13,7 +13,7 @@ header{
 
 background-image{
   margin: 0;
-  width: 100%;
+  width: auto;
   height: auto;
   /* position: fixed; */
   top: 0;
