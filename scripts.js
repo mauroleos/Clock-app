@@ -64,4 +64,4 @@ function getMonth(date){
   return months[date.getMonth()];
 }
 
-let clock = setInterval(displayTime, 0);
+setInterval(displayTime, 0);
