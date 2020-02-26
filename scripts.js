@@ -8,7 +8,7 @@ function displayTime() {
   const seconds = formatTime(date.getSeconds());
   const amPm = (date.getHours() < 12) ? "AM" : "PM";
 
-  document.getElementById("time").innerHTML = `${hours}:${minutes}:${seconds} ${amPm}`;
+  document.getElementById("time").innerHTML = `${hours}:${minutes}:${seconds}+${amPm}`;
 
   document.getElementById("weekday").innerHTML = `${getDay(date)} ${getMonth(date)} ${date.getDate()}, ${date.getFullYear()}`;
 }
