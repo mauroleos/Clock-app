@@ -10,10 +10,7 @@ function displayTime() {
 
   document.getElementById("time").innerHTML = `${hours}:${minutes}:${seconds} ${amPM}`;
 
-  document.getElementById("weekday").innerHTML = `${getDay(date)} ${getMonth(date)} ${date.getDate(),} ${date.getFullYear()}`;
-  document.getElementById("month").innerHTML = getMonth(date);
-  document.getElementById("date").innerHTML = date.getDate() + ",";
-  document.getElementById("year").innerHTML = date.getFullYear();
+  document.getElementById("weekday").innerHTML = `${getDay(date)} ${getMonth(date)} ${date.getDate()}, ${date.getFullYear()}`;
 }
 
 function formatTime(time) {
