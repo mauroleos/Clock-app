@@ -32,7 +32,7 @@ function normalHours(date){
 }
 
 function getDay(date){
-  let months = [
+  let weekDay = [
     "Sunday",
     "Monday",
     "Tuesday",
