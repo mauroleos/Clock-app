@@ -10,7 +10,7 @@ function displayTime() {
 
   document.getElementById("time").innerHTML = `${hours}:${minutes}:${seconds} ${amPM}`;
 
-  document.getElementById("weekday").innerHTML = getDay(date);
+  document.getElementById("weekday").innerHTML = `${getDay(date)} ${getMonth(date)} ${date.getDate(),} ${date.getFullYear()}`;
   document.getElementById("month").innerHTML = getMonth(date);
   document.getElementById("date").innerHTML = date.getDate() + ",";
   document.getElementById("year").innerHTML = date.getFullYear();
@@ -35,14 +35,15 @@ function normalHours(date){
 }
 
 function getDay(date){
-  let weekDay = new Array(7);
-  weekDay[0] = "Sunday";
-  weekDay[1] = "Monday";
-  weekDay[2] = "Tuesday";
-  weekDay[3] = "Wednesday";
-  weekDay[4] = "Thursday";
-  weekDay[5] = "Friday";
-  weekDay[6] = "Saturday";
+  let months = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
 
   return weekDay[date.getDay()];
 }
@@ -66,4 +67,4 @@ function getMonth(date){
   return months[date.getMonth()];
 }
 
-let clock = setInterval(displayTime, 0);
+setInterval(displayTime, 0);
